@@ -653,11 +653,6 @@ service copy_qxdm_log /system_ext/bin/OPDiagdataCopy -q ${copy.qxdm.log}
 #kim@bsp 2019/10/25 add to fix apsd wrong issue when boot with dash connected
 on property:sys.boot_completed=1
     write /sys/module/smb5_lib/parameters/sys_boot_complete 1
-#@bsp Add OTG switch
-on property:persist.sys.oem.otg_support=true
-    write /sys/class/power_supply/usb/otg_switch 1
-on property:persist.sys.oem.otg_support=false
-    write /sys/class/power_supply/usb/otg_switch 0
 #endif
 
 on property:vendor.sys.op.game=1
