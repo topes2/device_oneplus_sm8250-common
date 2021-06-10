@@ -22,6 +22,9 @@
     <!-- Whether device supports Alert Slider -->
     <bool name="config_deviceSupportsAlertSlider">true</bool>
 
+    <!-- Whether device supports Dolby -->
+    <bool name="config_deviceSupportsDolby">true</bool>
+
     <!-- Whether device supports Kcal -->
     <bool name="config_deviceSupportsKcal">true</bool>
 
